@@ -2,5 +2,5 @@
     "id": "5d29a037491c5f73366caa90",
     "name": "api-key",
     "type": "api-key",
-    "disabled": true
+    "disabled": false
 }
