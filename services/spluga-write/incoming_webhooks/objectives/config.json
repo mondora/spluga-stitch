@@ -1,0 +1,11 @@
+{
+    "id": "5d29bc98491c5f7336750d7a",
+    "name": "objectives",
+    "run_as_user_id": "",
+    "run_as_user_id_script_source": "",
+    "options": {
+        "httpMethod": "POST",
+        "validationMethod": "NO_VALIDATION"
+    },
+    "respond_result": true
+}
