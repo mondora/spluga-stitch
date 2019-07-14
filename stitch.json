@@ -1,8 +1,8 @@
 {
-    "app_id": "spluga-app-xogau",
+    "app_id": "spluga-api-qhgpc",
     "config_version": 20180301,
-    "name": "spluga-app",
-    "location": "US-VA",
-    "deployment_model": "GLOBAL",
+    "name": "spluga-api",
+    "location": "IE",
+    "deployment_model": "LOCAL",
     "security": {}
 }

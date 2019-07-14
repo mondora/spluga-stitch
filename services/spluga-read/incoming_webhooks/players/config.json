@@ -1,5 +1,5 @@
 {
-    "id": "5d29ba83a944dc4ae1944624",
+    "id": "5d2b5a9c2b9bb2a098eaa1af",
     "name": "players",
     "run_as_user_id": "",
     "run_as_user_id_script_source": "",
@@ -7,5 +7,5 @@
         "httpMethod": "GET",
         "validationMethod": "NO_VALIDATION"
     },
-    "respond_result": false
+    "respond_result": true
 }
