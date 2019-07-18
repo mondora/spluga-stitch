@@ -1,0 +1,46 @@
+{
+    "id": "5d2f7206bc909e5fbf17721e",
+    "database": "spluga",
+    "collection": "activities",
+    "roles": [
+        {
+            "name": "owner",
+            "apply_when": {
+                "ownerId": "%%user.id"
+            },
+            "read": true,
+            "insert": true,
+            "delete": true,
+            "additional_fields": {
+                "write": true
+            }
+        },
+        {
+            "name": "shared",
+            "apply_when": {
+                "read": "%%user.id"
+            },
+            "read": true,
+            "write": false,
+            "insert": false,
+            "delete": false,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "ownerId": {
+                "bsonType": "string"
+            },
+            "read": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "string"
+                }
+            }
+        }
+    }
+}

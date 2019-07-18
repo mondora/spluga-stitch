@@ -4,5 +4,9 @@
     "name": "spluga-api",
     "location": "IE",
     "deployment_model": "LOCAL",
-    "security": {}
+    "security": {},
+    "hosting": {
+        "enabled": false,
+        "app_default_domain": "spluga-api-qhgpc.mongodbstitch.com"
+    }
 }

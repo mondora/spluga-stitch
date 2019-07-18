@@ -1,0 +1,45 @@
+{
+    "id": "5d2f7a6416b82b1b2ea3c834",
+    "database": "spluga",
+    "collection": "companies",
+    "roles": [
+        {
+            "name": "owner",
+            "apply_when": {
+                "ownerId": "%%user.id"
+            },
+            "read": true,
+            "write": true,
+            "insert": true,
+            "delete": true,
+            "additional_fields": {}
+        },
+        {
+            "name": "shared",
+            "apply_when": {
+                "read": "%%user.id"
+            },
+            "read": true,
+            "write": false,
+            "insert": false,
+            "delete": false,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "ownerId": {
+                "bsonType": "string"
+            },
+            "read": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "string"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "id": "5d2da7403269972949d5b462",
+    "name": "custom-token",
+    "type": "custom-token",
+    "config": {
+        "audience": "",
+        "signingAlgorithm": "HS256"
+    },
+    "secret_config": {
+        "signingKey": "Login"
+    },
+    "disabled": true
+}
