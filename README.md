@@ -1,3 +1,3 @@
-# spluga-api
+# spluga-stich
 
 Stitch application for Spluga
