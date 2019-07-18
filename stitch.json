@@ -1,12 +1,8 @@
 {
-    "app_id": "spluga-api-qhgpc",
+    "app_id": "spluga-stitch-lfvau",
     "config_version": 20180301,
-    "name": "spluga-api",
-    "location": "IE",
-    "deployment_model": "LOCAL",
-    "security": {},
-    "hosting": {
-        "enabled": false,
-        "app_default_domain": "spluga-api-qhgpc.mongodbstitch.com"
-    }
+    "name": "spluga-stitch",
+    "location": "US-VA",
+    "deployment_model": "GLOBAL",
+    "security": {}
 }

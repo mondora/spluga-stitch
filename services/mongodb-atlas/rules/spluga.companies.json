@@ -1,5 +1,5 @@
 {
-    "id": "5d2f7a6416b82b1b2ea3c834",
+    "id": "5d3066acc3e6a2d8fd417210",
     "database": "spluga",
     "collection": "companies",
     "roles": [
@@ -8,7 +8,6 @@
             "apply_when": {
                 "ownerId": "%%user.id"
             },
-            "read": true,
             "write": true,
             "insert": true,
             "delete": true,

@@ -1,7 +1,7 @@
 {
-    "id": "5d2f7206bc909e5fbf17721e",
+    "id": "5d3070ba27ee37f423d9dcc8",
     "database": "spluga",
-    "collection": "activities",
+    "collection": "goals",
     "roles": [
         {
             "name": "owner",
@@ -9,11 +9,10 @@
                 "ownerId": "%%user.id"
             },
             "read": true,
+            "write": true,
             "insert": true,
             "delete": true,
-            "additional_fields": {
-                "write": true
-            }
+            "additional_fields": {}
         },
         {
             "name": "shared",
