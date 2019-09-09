@@ -1,7 +1,7 @@
 {
-    "id": "5d487ea3a1771cc5945f47d3",
+    "id": "5d3ec52ac96493fd3c186db8",
     "database": "spluga",
-    "collection": "goals",
+    "collection": "targets",
     "roles": [
         {
             "name": "owner",

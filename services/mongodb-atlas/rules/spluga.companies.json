@@ -6,7 +6,11 @@
         {
             "name": "owner",
             "apply_when": {
-                "ownerId": "%%user.id"
+                "team.id": "%%user.id",
+                "team.role": "O"
+            },
+            "fields": {
+                "team": {}
             },
             "write": true,
             "insert": true,
@@ -16,11 +20,29 @@
         {
             "name": "shared",
             "apply_when": {
-                "read": "%%user.id"
+                "team.id": "%%user.id",
+                "team.role": "U"
+            },
+            "fields": {
+                "team": {}
             },
             "read": true,
             "write": false,
             "insert": false,
+            "delete": false,
+            "additional_fields": {}
+        },
+        {
+            "name": "acceptInvitation",
+            "apply_when": {
+                "team.email": "%%user.data.email"
+            },
+            "fields": {
+                "team": {
+                    "write": true
+                }
+            },
+            "insert": true,
             "delete": false,
             "additional_fields": {}
         }
@@ -30,13 +52,27 @@
             "_id": {
                 "bsonType": "objectId"
             },
-            "ownerId": {
+            "name": {
                 "bsonType": "string"
             },
-            "read": {
+            "logo": {
+                "bsonType": "string"
+            },
+            "team": {
                 "bsonType": "array",
                 "items": {
-                    "bsonType": "string"
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "role": {
+                            "type": "string"
+                        },
+                        "picture": {
+                            "type": "string"
+                        }
+                    }
                 }
             }
         }
