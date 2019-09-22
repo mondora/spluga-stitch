@@ -33,6 +33,8 @@
     ],
     "redirect_uris": [
         "http://localhost:3000/",
-        "https://dev.spluga.io/"
+        "https://dev.spluga.io/",
+        "http://localhost:3000/team",
+        "https://dev.spluga.io/team"
     ]
 }
