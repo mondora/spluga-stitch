@@ -1,5 +1,4 @@
 exports = function(email, hostName) {
-  email = "delloro.roberto@gmail.com";
   const sendGridApiUrl = "https://api.sendgrid.com/v3/mail/send";
   const sendGridApiKey = context.values.get('SendGridApiKey');
 
