@@ -1,21 +1,10 @@
 {
-    "id": "5d487ea3a1771cc5945f47d3",
+    "id": "5d93aeb481337c6f54501cd8",
     "database": "spluga",
     "collection": "goals",
     "roles": [
         {
-            "name": "owner",
-            "apply_when": {
-                "ownerId": "%%user.id"
-            },
-            "read": true,
-            "write": true,
-            "insert": true,
-            "delete": true,
-            "additional_fields": {}
-        },
-        {
-            "name": "non-owner",
+            "name": "default",
             "apply_when": {},
             "read": true,
             "write": false,
@@ -28,9 +17,6 @@
         "properties": {
             "_id": {
                 "bsonType": "objectId"
-            },
-            "ownerId": {
-                "bsonType": "string"
             }
         }
     }
